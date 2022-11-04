@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 24 Dec 2018 12:29:41 +0800</lastBuildDate><atom:link href="https://duanjiamin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Nov 2022 11:29:09 +0800</lastBuildDate><atom:link href="https://duanjiamin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记录一次BusFault调查</title>
+      <link>https://duanjiamin.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1busfault%E8%B0%83%E6%9F%A5/</link>
+      <pubDate>Fri, 04 Nov 2022 11:29:09 +0800</pubDate>
+      
+      <guid>https://duanjiamin.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1busfault%E8%B0%83%E6%9F%A5/</guid>
+      <description>记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水</description>
+    </item>
+    
     <item>
       <title>The &#34;figure&#34; Shortcode</title>
       <link>https://duanjiamin.github.io/posts/the-figure-shortcode/</link>

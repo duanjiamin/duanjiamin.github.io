@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://duanjiamin.github.io/posts/</loc>
+    <lastmod>2022-11-04T11:29:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duanjiamin.github.io/</loc>
+    <lastmod>2022-11-04T11:29:09+08:00</lastmod>
+  </url><url>
+    <loc>https://duanjiamin.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1busfault%E8%B0%83%E6%9F%A5/</loc>
+    <lastmod>2022-11-04T11:29:09+08:00</lastmod>
+  </url><url>
     <loc>https://duanjiamin.github.io/tags/demo/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url><url>
     <loc>https://duanjiamin.github.io/tags/image/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url><url>
-    <loc>https://duanjiamin.github.io/posts/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url><url>
     <loc>https://duanjiamin.github.io/tags/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url><url>
     <loc>https://duanjiamin.github.io/posts/the-figure-shortcode/</loc>
-    <lastmod>2018-12-24T12:29:41+08:00</lastmod>
-  </url><url>
-    <loc>https://duanjiamin.github.io/</loc>
     <lastmod>2018-12-24T12:29:41+08:00</lastmod>
   </url><url>
     <loc>https://duanjiamin.github.io/posts/post-with-featured-image/</loc>
