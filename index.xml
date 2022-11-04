@@ -5,7 +5,7 @@
     <link>https://duanjiamin.github.io/</link>
     <description>Recent content on 端家敏&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-Hans</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 04 Nov 2022 11:29:09 +0800</lastBuildDate><atom:link href="https://duanjiamin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +14,7 @@
       <pubDate>Fri, 04 Nov 2022 11:29:09 +0800</pubDate>
       
       <guid>https://duanjiamin.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1busfault%E8%B0%83%E6%9F%A5/</guid>
-      <description>记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水</description>
+      <description>现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法</description>
     </item>
     
     <item>

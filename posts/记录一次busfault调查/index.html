@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-Hans">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>记录一次BusFault调查 | 端家敏&#39;Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水">
+    <meta name="description" content="现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法">
     <meta name="generator" content="Hugo 0.102.3" />
     
     
@@ -30,19 +30,19 @@
     
     
     <meta property="og:title" content="记录一次BusFault调查" />
-<meta property="og:description" content="记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水" />
+<meta property="og:description" content="现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://duanjiamin.github.io/posts/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1busfault%E8%B0%83%E6%9F%A5/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-04T11:29:09+08:00" />
 <meta property="article:modified_time" content="2022-11-04T11:29:09+08:00" />
 
 <meta itemprop="name" content="记录一次BusFault调查">
-<meta itemprop="description" content="记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水"><meta itemprop="datePublished" content="2022-11-04T11:29:09+08:00" />
+<meta itemprop="description" content="现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法"><meta itemprop="datePublished" content="2022-11-04T11:29:09+08:00" />
 <meta itemprop="dateModified" content="2022-11-04T11:29:09+08:00" />
-<meta itemprop="wordCount" content="2229">
+<meta itemprop="wordCount" content="2216">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="记录一次BusFault调查"/>
-<meta name="twitter:description" content="记一次BusFault调查 现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水"/>
+<meta name="twitter:description" content="现象 我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法"/>
 
 	
   </head>
@@ -69,13 +69,13 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="posts/" title="Posts page">
+            <a class="hover-white no-underline white-90" href="posts/" title="Posts 页">
               Posts
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="about-hugo/" title="About page">
+            <a class="hover-white no-underline white-90" href="about-hugo/" title="About 页">
               About
             </a>
           </li>
@@ -125,14 +125,13 @@
       
       
       
-      <time class="f6 mv4 dib tracked" datetime="2022-11-04T11:29:09+08:00">November 4, 2022</time>
+      <time class="f6 mv4 dib tracked" datetime="2022-11-04T11:29:09+08:00">十一月 4, 2022</time>
       
 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="记一次busfault调查">记一次BusFault调查</h1>
-<h2 id="现象">现象</h2>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="现象">现象</h2>
 <p>我们通过一直给板子发送下电报文，使板子不停循环上电下电。一段时间之后，上下电动作会停止，功耗维持在正常的上电水平并且can通信出错，无法正确收发can信。</p>
 <p>连接上调试器，我们发现代码跑进了Busfault中断，并且Busfault的中断调用实现是一个死循环。<br>
 <img src="/images/busfault/busfault_deadloop.PNG" alt="pic1.jpg"></p>
@@ -209,7 +208,7 @@ NVM状态机是通过连续调用三个<code>NvM_Fsm</code>函数来推动的，
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.src = '//' + "realdjm" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -217,9 +216,7 @@ NVM状态机是通过连续调用三个<code>NvM_Fsm</code>函数来推动的，
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       
-      <div id="commento"></div>
-<script defer src="https://cdn.commento.io/js/commento.js"></script>
-
+      
       </div>
     </div>
 
